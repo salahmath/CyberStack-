@@ -12,7 +12,5 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
-  );
-}
-
+  )}
 export default App;

@@ -1,3 +1,4 @@
+
 .flex{
     display: flex;
 }
@@ -29,3 +30,7 @@ html {
     text-decoration: none;
     color: initial;
   }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
