@@ -1,0 +1,102 @@
+.header .bg {
+  width: 1372px;
+  height: 640px;
+  position: absolute;
+}
+
+.navbar {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  position: relative;
+  margin: 40px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.184);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+.header ul {
+  position: relative;
+  gap: 2rem;
+  cursor: pointer;
+  list-style-type: none;
+  margin-top: 1px;
+  margin-right: 40px;
+}
+
+.header a:hover {
+  color: var(--blue);
+  scale: 0.8;
+  rotate: 100deg;
+}
+.header a {
+  color: var(--title);
+
+  opacity: 0.8 !important;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: inherit;
+  text-transform: uppercase;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  transition: 0.4s;
+}
+
+.border {
+  border-top: 2px solid var(--blue); /* Bordure visible au-dessous du lien */
+  padding-top: 0.6rem;
+}
+.header .bg {
+    width: 100%; /* Ajustez la largeur à 100% pour que l'image prenne tout l'espace */
+    height: 640px; /* Hauteur de l'image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* S'assure que l'image couvre toute la zone */
+  }
+  
+  .header .title {
+    text-transform: uppercase;
+    opacity: 1;
+    font-size: 2rem;
+    position: absolute; /* Permet de positionner par rapport au parent */
+    color: transparent; /* Rendre le texte transparent à l'intérieur */
+    -webkit-text-stroke: 1px wheat; /* Contour des lettres en couleur */
+    text-align: center;
+    top: 50%; /* Centrage vertical */
+    left: 50%; /* Centrage horizontal */
+    transform: translate(-50%, -50%); /* Ajuste la position pour centrer précisément */
+    width: 100%; /* Largeur de l'élément */
+    padding: 0 2rem; /* Ajoute du padding pour éviter que le texte touche les bords */
+    z-index: 1; /* S'assure que le texte est au-dessus de l'image */
+  }
+
+  
+  .change-button {
+    margin-bottom: 20px; /* Space between title and button */
+    position: absolute; /* Permet de positionner par rapport au parent */
+    padding: 20px; /* Padding around the button */
+    font-size: 1rem; /* Font size of the button */
+    background-color: rgba(255, 255, 255, 0.079);
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+    top: 85%;
+    left: 92%;
+  }
+  
+  .change-button:hover {
+    background-color: rgba(255, 255, 255, 0.892); /* Background color */
+    scale: 1.1;
+    color: var(--blue);
+    rotate: -5deg;
+  }
