@@ -1,6 +1,15 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Footer() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease-in-out", // Easing function
+      once: false, // Whether animation should happen only once or every time you scroll
+      mirror: true,
+    });
+  }, []);
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
@@ -56,21 +65,32 @@ function Footer() {
         {/* Contact Info */}
         <div className="space-y-4">
           <h3 className="text-xl font-semibold text-white">Contact Us</h3>
-          <p className="text-gray-400">123 Your Street, Your City, Country</p>
+          <p className="text-gray-400">
+            Habib Borguiba Street, Ben arous, Tunisia
+          </p>
           <p className="text-gray-400">
             <a
-              href="mailto:info@yourcompany.com"
+              href="mailto:contact.cyberstack@gmail.com"
               className="hover:text-white transition duration-300"
             >
-              info@yourcompany.com
+              contact.cyberstack@gmail.com
             </a>
           </p>
           <p className="text-gray-400">
             <a
-              href="tel:+1234567890"
+              href="tel:+21651829102"
               className="hover:text-white transition duration-300"
             >
-              +123 456 7890
+              +216 51 829 102
+            </a>
+          </p>
+
+          <p className="text-gray-400">
+            <a
+              href="tel:+21628896143"
+              className="hover:text-white transition duration-300"
+            >
+              +216 28 896 143
             </a>
           </p>
         </div>
@@ -80,7 +100,7 @@ function Footer() {
           <h3 className="text-xl font-semibold text-white">Follow Us</h3>
           <div className="flex space-x-4">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/cyberstacktn"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition duration-300"
@@ -131,7 +151,7 @@ function Footer() {
       {/* Footer Bottom */}
       <div className="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500 text-sm">
         <p>
-          &copy; {new Date().getFullYear()} YourCompany. All rights reserved.
+          &copy; {new Date().getFullYear()} CyberStack. All rights reserved.
         </p>
       </div>
     </footer>

@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCode, FaMobileAlt, FaShieldAlt } from "react-icons/fa"; // Import icons
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Services() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease-in-out", // Easing function
+      once: false, // Whether animation should happen only once or every time you scroll
+      mirror: true,
+    });
+  }, []);
   const services = [
     {
       title: "Web Development",
@@ -24,7 +33,7 @@ function Services() {
   ];
 
   return (
-    <section className="bg-gray-50 py-16 px-6 lg:px-20">
+    <section id="services" className="bg-gray-50 py-16 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">

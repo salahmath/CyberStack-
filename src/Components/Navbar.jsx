@@ -12,22 +12,25 @@ const Navbar = () => {
           </a>
         </div>
         <div className="hidden md:flex space-x-8 mr-24">
-          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
+          <a href="#home" className="text-gray-700 hover:text-yellow-600 item">
             Home
           </a>
-          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
-            Partners
-          </a>
-          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
+          <a href="#about" className="text-gray-700 hover:text-yellow-600 item">
             About Us
           </a>
-          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
+          <a
+            href="#services"
+            className="text-gray-700 hover:text-yellow-600 item"
+          >
             Services
           </a>
-          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
+          <a href="#team" className="text-gray-700 hover:text-yellow-600 item">
             Team
           </a>
-          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
+          <a
+            href="#contact"
+            className="text-gray-700 hover:text-yellow-600 item"
+          >
             Contact
           </a>
         </div>
