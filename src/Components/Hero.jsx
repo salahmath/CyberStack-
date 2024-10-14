@@ -1,5 +1,7 @@
 import React from "react";
-
+import Lottie from "lottie-react";
+import groovyWalkAnimation from "../../public/lootie/blackPc.json";
+import Marquee from "react-fast-marquee";
 const Hero = () => {
   return (
     <section className="bg-white py-12">
@@ -46,13 +48,15 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="lg:w-1/2">
-          <img src="/hero.png" alt="Target graphic" className="w-full" />
+        <div className="lg:w-1/2 lottie">
+          <Lottie animationData={groovyWalkAnimation} loop={true} />
+       
         </div>
       </div>
       <div className="container mx-auto mt-12 flex justify-center space-x-8 mt-20">
+      <Marquee className="marquee">
         <svg
-          class="h-9 hover:text-gray-500 dark:hover:text-yellow-500"
+          class="h-9 hover:text-gray-500 dark:hover:text-yellow-500 svg-spacing"
           viewBox="0 0 125 35"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +69,7 @@ const Hero = () => {
           ></path>
         </svg>
         <svg
-          class="h-9 hover:text-gray-500 dark:hover:text-yellow-500"
+          class="h-9 hover:text-gray-500 dark:hover:text-yellow-500 svg-spacing"
           viewBox="0 0 86 29"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +82,7 @@ const Hero = () => {
           ></path>
         </svg>
         <svg
-          class="h-8 hover:text-gray-500 dark:hover:text-yellow-500"
+          class="h-8 hover:text-gray-500 dark:hover:text-yellow-500 svg-spacing"
           viewBox="0 0 151 34"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +105,7 @@ const Hero = () => {
           </defs>
         </svg>
         <svg
-          class="h-9 hover:text-gray-500 dark:hover:text-yellow-500"
+          class="h-9 hover:text-gray-500 dark:hover:text-yellow-500 svg-spacing"
           viewBox="0 0 124 38"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +116,7 @@ const Hero = () => {
           ></path>
         </svg>
         <svg
-          class="h-9 hover:text-gray-500 dark:hover:text-yellow-500"
+          class="h-9 hover:text-gray-500 dark:hover:text-yellow-500 svg-spacing"
           viewBox="0 0 137 37"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
@@ -191,7 +195,7 @@ const Hero = () => {
           ></path>
         </svg>
         <svg
-          class="h-6 hover:text-gray-500 dark:hover:text-yellow-500"
+          class="h-6 hover:text-gray-500 dark:hover:text-yellow-500 svg-spacing"
           viewBox="0 0 124 21"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
@@ -245,6 +249,7 @@ const Hero = () => {
             fill="currentColor"
           ></path>
         </svg>
+        </Marquee>
       </div>
     </section>
   );

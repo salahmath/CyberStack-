@@ -34,3 +34,49 @@ html {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.lottie {
+  width: 350px !important;
+}
+.marquee {
+ width: 1000px;
+}
+.svg-spacing {
+  margin-right: 100px; /* Adjust the value as needed */
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Slower duration */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.item{
+  transition: 0.3s;
+ 
+}
+.item:hover{
+  scale: 1.1;
+  color: red !important;
+}
+
+.image1:hover {
+  scale: 1; /* Initial scale */
+  animation: grow 1s forwards; /* Animation duration */
+}
+
+@keyframes grow {
+  0% {
+    scale: 1; /* Start at original size */
+  }
+  50% {
+    scale: 1.1; /* Scale up to 1.2 */
+  }
+  100% {
+    scale: 1; /* Scale back to original size */
+  }
+}

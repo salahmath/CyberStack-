@@ -7,27 +7,27 @@ const Navbar = () => {
         <div className="flex items-center space-x-3 ml-36 mt-4">
           {/* Logo image */}
 
-          <a href="/" className="text-3xl font-bold text-grey-600">
+          <a href="/" className="text-3xl font-bold text-grey-600 ">
             CYBER <span className="text-red-500">STACK</span>
           </a>
         </div>
         <div className="hidden md:flex space-x-8 mr-24">
-          <a href="#" className="text-gray-700 hover:text-yellow-600">
+          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
             Home
           </a>
-          <a href="#" className="text-gray-700 hover:text-yellow-600">
+          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
             Partners
           </a>
-          <a href="#" className="text-gray-700 hover:text-yellow-600">
+          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
             About Us
           </a>
-          <a href="#" className="text-gray-700 hover:text-yellow-600">
+          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
             Services
           </a>
-          <a href="#" className="text-gray-700 hover:text-yellow-600">
+          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
             Team
           </a>
-          <a href="#" className="text-gray-700 hover:text-yellow-600">
+          <a href="#" className="text-gray-700 hover:text-yellow-600 item">
             Contact
           </a>
         </div>
