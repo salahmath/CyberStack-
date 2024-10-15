@@ -80,3 +80,22 @@ html {
     scale: 1; /* Scale back to original size */
   }
 }
+body::-webkit-scrollbar {
+  width: 0.6rem; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(173, 173, 173, 0.537); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #88888868; /* color of the scroll thumb */
+  border-radius: 2px; /* roundness of the scroll thumb */
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #4444446a; /* color of the scroll thumb */
+  border-radius: 2px; /* roundness of the scroll thumb */
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -34,7 +34,7 @@ function Contact() {
   };
 
   return (
-    <section className="bg-gray-50 py-16 px-6 lg:px-20">
+    <section id="contact" className="bg-gray-50 py-16 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Left Side: Contact Info */}
         <div className="space-y-8">
@@ -50,10 +50,10 @@ function Contact() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800">Email</h3>
               <a
-                href="mailto:info@yourcompany.com"
+                href="mailto:contact.cyberstack@gmail.com"
                 className="text-purple-600 hover:underline"
               >
-                info@yourcompany.com
+                contact.cyberstack@gmail.com
               </a>
             </div>
             <div>
@@ -70,10 +70,18 @@ function Contact() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800">Phone</h3>
               <a
-                href="tel:+1234567890"
+                href="tel:+216 28 896 143"
                 className="text-purple-600 hover:underline"
               >
-                +123 456 7890
+                +216 28 896 143(1)
+              </a>
+            </div>
+            <div>
+              <a
+                href="tel:+216 51 829 102"
+                className="text-purple-600 hover:underline"
+              >
+                +216 51 829 102(2)
               </a>
             </div>
           </div>

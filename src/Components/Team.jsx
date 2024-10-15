@@ -3,21 +3,20 @@ import React from "react";
 function Team() {
   const teamMembers = [
     {
-      name: "John Doe",
+      name: "Salah MAthlouthi",
       role: "Lead Developer",
       image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fG1hbnxlbnwwfHx8fDE2MzY4NzY2NTM&ixlib=rb-1.2.1&q=80&w=400",
-    },
+   "/salah.png" },
     {
-      name: "Jane Smith",
+      name: "Karim Selmi",
       role: "Cybersecurity Expert",
       image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHx3b21hbnxlbnwwfHx8fDE2MzY4NzY2NTM&ixlib=rb-1.2.1&q=80&w=400",
+        "https://media.licdn.com/dms/image/v2/D4E03AQHAfNYOSWqM-w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693696658849?e=1734566400&v=beta&t=2jNHk-ZBAX8OLbkZq7JTKM6EzL5LgyT0FqA6m8YoUD0"
     },
   ];
 
   return (
-    <section className="bg-gray-100 py-16 px-6 lg:px-20">
+    <section id="team" className="bg-gray-100 py-16 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Meet the Team</h2>
         <p className="text-gray-600">

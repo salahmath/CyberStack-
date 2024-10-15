@@ -4,7 +4,7 @@ import groovyWalkAnimation from "../../public/lootie/blackPc.json";
 import Marquee from "react-fast-marquee";
 const Hero = () => {
   return (
-    <section className="bg-white py-12">
+    <section id="home" className="bg-white py-12">
       <div className="container mx-auto px-5 flex flex-col-reverse lg:flex-row items-center">
         <div className="lg:w-1/2 flex flex-col space-y-4 ml-36">
           <h1 className="text-5xl font-extrabold text-gray-900 leading-tight">
@@ -19,8 +19,8 @@ const Hero = () => {
           </p>
           <div className="flex space-x-4">
             <a
-              href="#"
-              className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg flex items-center"
+      href="https://www.linkedin.com/company/cyberstacktn/about/" // Link to your LinkedIn company page
+              className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg flex items-center image1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const Hero = () => {
             </a>
             <a
               href="#"
-              className="bg-purple-600 text-white px-4 py-2 rounded-lg flex items-center"
+              className="bg-purple-600 text-white px-4 py-2 rounded-lg flex items-center image1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Hero = () => {
        
         </div>
       </div>
-      <div className="container mx-auto mt-12 flex justify-center space-x-8 mt-20">
+      <div id="partners" className="container mx-auto mt-12 flex justify-center space-x-8 mt-20">
       <Marquee className="marquee">
         <svg
           class="h-9 hover:text-gray-500 dark:hover:text-yellow-500 svg-spacing"
