@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCode, FaMobileAlt, FaShieldAlt } from "react-icons/fa"; // Import icons
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Services() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease-in-out", // Easing function
+      once: false, // Whether animation should happen only once or every time you scroll
+      mirror: true,
+    });
+  }, []);
   const services = [
     {
       title: "Web Development",

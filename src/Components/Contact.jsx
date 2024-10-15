@@ -1,11 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease-in-out", // Easing function
+      once: false, // Whether animation should happen only once or every time you scroll
+      mirror: true,
+    });
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,17 +30,21 @@ function Contact() {
     e.preventDefault();
     const { name, email, message } = formData;
 
-    // Créer l'URL mailto
-    const mailtoLink = `mailto:contact.cyberstack@gmail.com?subject=Message de ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0D%0A%0D%0AEnvoyé par: ${encodeURIComponent(email)}`;
+    // Create mailto URL
+    const mailtoLink = `mailto:contact.cyberstack@gmail.com?subject=Message from ${encodeURIComponent(
+      name
+    )}&body=${encodeURIComponent(
+      message
+    )}%0D%0A%0D%0ASent by: ${encodeURIComponent(email)}`;
 
-    // Ouvrir le client de messagerie par défaut
+    // Open default email client
     window.location.href = mailtoLink;
 
-    // Réinitialiser le formulaire
+    // Reset form
     setFormData({
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     });
   };
 
@@ -64,24 +79,24 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="text-purple-600 hover:underline"
               >
-                123 Your Street, Your City, Country
+                Habib Borguiba Street, Ben Arous, Tunisia
               </a>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-800">Phone</h3>
               <a
-                href="tel:+216 28 896 143"
+
+                href="tel:+21651829102"
                 className="text-purple-600 hover:underline"
               >
-                +216 28 896 143(1)
+                +216 51 829 102
               </a>
-            </div>
-            <div>
+              <p className="text-purple-600 ">&</p>
               <a
-                href="tel:+216 51 829 102"
+                href="tel:+21628896143"
                 className="text-purple-600 hover:underline"
               >
-                +216 51 829 102(2)
+                +216 28 896 143
               </a>
             </div>
           </div>
@@ -93,58 +108,67 @@ function Contact() {
             Send a Message
           </h3>
           <form onSubmit={handleSubmit} className="space-y-6">
-      <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-          Your Name
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          value={formData.name}
-          onChange={handleChange}
-          className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-600 focus:border-purple-600"
-        />
-      </div>
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Your Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                value={formData.name}
+                onChange={handleChange}
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-600 focus:border-purple-600"
+              />
+            </div>
 
-      <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-          Your Email
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          value={formData.email}
-          onChange={handleChange}
-          className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-600 focus:border-purple-600"
-        />
-      </div>
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Your Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                value={formData.email}
+                onChange={handleChange}
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-600 focus:border-purple-600"
+              />
+            </div>
 
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-          Your Message
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          required
-          value={formData.message}
-          onChange={handleChange}
-          className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-600 focus:border-purple-600"
-        ></textarea>
-      </div>
+            <div>
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Your Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                value={formData.message}
+                onChange={handleChange}
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-600 focus:border-purple-600"
+              ></textarea>
+            </div>
 
-      <button
-        type="submit"
-        className="w-full bg-purple-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-purple-700 transition-colors duration-300"
-      >
-        Send Message
-      </button>
-    </form>
+            <button
+              type="submit"
+              className="w-full bg-purple-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-purple-700 transition-colors duration-300"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </section>
