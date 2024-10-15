@@ -191,3 +191,13 @@ html {
     }
     
     }
+    .close{
+      transition: 0.4s;
+
+    }
+
+
+    .close:hover{
+      rotate: 180deg !important;
+      scale: 1.01;
+    }
