@@ -8,6 +8,7 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Lottie from "lottie-react";
 import loadingAnimation from "../public/lootie/1.json"; // Remplacez par le chemin vers votre fichier Lottie
+import Partners from "./Components/Partners";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,15 +26,23 @@ function Home() {
   return (
     <div>
       {isLoading ? (
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+          }}
+        >
           <Lottie animationData={loadingAnimation} loop={true} />
         </div>
       ) : (
-        <div className={`fade-in ${isVisible ? 'fade-in' : ''}`}>
+        <div className={`fade-in ${isVisible ? "fade-in" : ""}`}>
           <Navbar />
           <Hero />
           <About />
           <Services />
+          <Partners />
           <Team />
           <Contact />
           <Footer />
