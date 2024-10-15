@@ -1,7 +1,7 @@
-import React from "react";
 import Lottie from "lottie-react";
-import groovyWalkAnimation from "../../public/lootie/blackPc.json";
+import React from "react";
 import Marquee from "react-fast-marquee";
+import groovyWalkAnimation from "../../public/lootie/blackPc.json";
 const Hero = () => {
   return (
     <section id="home" className="bg-white py-12">
@@ -57,7 +57,8 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto mt-36 flex justify-center space-x-8 mt-20 mb-20">
-        <Marquee className="marquee">
+      <div className="marquee">
+        <Marquee >
           <svg
             class="h-9 hover:text-gray-500 dark:hover:text-yellow-500 svg-spacing"
             viewBox="0 0 125 35"
@@ -253,6 +254,7 @@ const Hero = () => {
             ></path>
           </svg>
         </Marquee>
+        </div>
       </div>
     </section>
   );

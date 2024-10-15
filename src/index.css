@@ -40,7 +40,7 @@ html {
   width: 350px !important;
 }
 .marquee {
- width: 1000px;
+ width: 1100px;
 }
 .svg-spacing {
   margin-right: 100px; /* Adjust the value as needed */
@@ -74,7 +74,7 @@ html {
     scale: 1; /* Start at original size */
   }
   50% {
-    scale: 1.1; /* Scale up to 1.2 */
+    scale: 1.02; /* Scale up to 1.2 */
   }
   100% {
     scale: 1; /* Scale back to original size */
@@ -98,4 +98,36 @@ body::-webkit-scrollbar-thumb:hover {
 }
 html {
   scroll-behavior: smooth;
+}
+.services {
+  transition: 0.4s;
+}
+
+
+.contact {
+  transition: 0.4s;
+  margin-top: 0.25rem; /* mt-1 */
+  display: block;      /* block */
+  width: 100%;        /* w-full */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem;/* px-4 */
+  padding-top: 0.5rem;/* py-2 */
+  padding-bottom: 0.5rem;/* py-2 */
+  border: 1px solid rgba(156, 163, 175, 1); /* border & border-gray-300 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* shadow-sm */
+  transition: border-color 0.2s, box-shadow 0.2s; /* pour les transitions au focus */
+}
+
+.contact:focus {
+  border: 1px solid rgba(126, 34, 206, 0.5) !important;
+  outline: none; /* Retire le contour par défaut */
+  box-shadow: 0 0 0 2px rgba(126, 34, 206, 0.5); /* focus:ring-purple-600 */
+  border-color: rgba(126, 34, 206, 1); /* focus:border-purple-600 */
+}
+.contact:hover {
+  border: 1px solid rgba(126, 34, 206, 0.12) !important;
+  outline: none; /* Retire le contour par défaut */
+  box-shadow: 0 0 0 2px rgba(126, 34, 206, 0.354); /* focus:ring-purple-600 */
+  border-color: rgba(126, 34, 206, 0.405); /* focus:border-purple-600 */
 }

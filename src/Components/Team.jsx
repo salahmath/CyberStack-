@@ -13,36 +13,18 @@ function Team() {
   }, []);
 
   const teamMembers = [
-    {
-      name: "Joe Doe",
-      role: "Full Stack Developer",
-      image:
-        "https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=",
-    },
+   
     {
       name: "Salah Mathlouthi",
       role: "Co-founder & CTO",
       image:
-        "https://media.licdn.com/dms/image/v2/D4D03AQHYKaHFEN38VQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725014959427?e=1734566400&v=beta&t=-_aF9yJH2QbLdTde-LydRYRn2W-QufVq3ElTpiWOuK8",
-    },
+        "/salah.png"  },
     {
       name: "Karim Selmi",
       role: "Co-founder & CEO",
       image:
         "https://media.licdn.com/dms/image/v2/D4E03AQHAfNYOSWqM-w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693696658849?e=1734566400&v=beta&t=2jNHk-ZBAX8OLbkZq7JTKM6EzL5LgyT0FqA6m8YoUD0",
-    },
-    {
-      name: "John Cliff",
-      role: "Cybersecurity Spécialist",
-      image:
-        "https://t3.ftcdn.net/jpg/00/53/01/86/360_F_53018621_KQbIttjKsgF4LIH6JwpACBSdTHgepTLz.jpg",
-    },
-    {
-      name: "Jassmin Kroft",
-      role: "Marketing Manager",
-      image:
-        "https://www.shutterstock.com/image-vector/person-gray-photo-placeholder-woman-600nw-1241538838.jpg",
-    },
+    }
   ]; 
   return (
     <section id="team" className="bg-gray-100 py-16 px-6 lg:px-20">

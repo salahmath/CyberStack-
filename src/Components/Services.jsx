@@ -45,13 +45,13 @@ function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-3 hover:scale-105"
+              className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-3 hover:scale-105 services "
             >
-              <div className="flex justify-center mb-6">{service.icon}</div>
+              <div className="flex justify-center mb-6 icones">{service.icon}</div>
               <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
                 {service.title}
               </h3>

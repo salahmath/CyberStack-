@@ -54,7 +54,7 @@ const About = () => {
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHRlYW18ZW58MHx8fHwxNjkxNTQ0NzUz&ixlib=rb-1.2.1&q=80&w=800"
               alt="Team working on a project"
-              className="rounded-lg shadow-lg w-full h-full object-cover"
+              className="rounded-lg shadow-lg w-full h-full object-cover image1"
             />
           </div>
 
@@ -66,12 +66,12 @@ const About = () => {
             <img
               src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI1fHxpbm5vdmF0aW9ufGVufDB8fHx8MTY5MTU0NDcyNQ&ixlib=rb-1.2.1&q=80&w=800"
               alt="Innovation in technology"
-              className="rounded-lg shadow-lg w-full h-full object-cover"
+              className="rounded-lg shadow-lg w-full h-full object-cover image1"
             />
           </div>
 
           <div
-            className="flex flex-col justify-center order-1 md:order-2"
+            className="flex flex-col justify-center order-1 md:order-2 "
             data-aos="fade-up"
             data-aos-delay="500"
           >
