@@ -69,7 +69,44 @@ function Contact() {
             We would love to hear from you! Whether you have a question, want to
             work together, or just say hello.
           </p>
-          {/* ... */}
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800">Email</h3>
+              <a
+                href="mailto:contact.cyberstack@gmail.com"
+                className="text-purple-600 hover:underline"
+              >
+                contact.cyberstack@gmail.com
+              </a>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800">Address</h3>
+              <a
+                href="https://www.google.com/maps"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-600 hover:underline"
+              >
+                Habib Borguiba Street, Ben Arous, Tunisia
+              </a>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800">Phone</h3>
+              <a
+                href="tel:+21651829102"
+                className="text-purple-600 hover:underline"
+              >
+                +216 51 829 102
+              </a>
+              <p className="text-purple-600 ">&</p>
+              <a
+                href="tel:+21628896143"
+                className="text-purple-600 hover:underline"
+              >
+                +216 28 896 143
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Right Side: Contact Form */}
