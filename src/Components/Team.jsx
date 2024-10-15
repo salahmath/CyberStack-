@@ -41,29 +41,30 @@ function Team() {
         </p>
       </div>
 
-      <div className="flex justify-center space-x-8">
-        {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-3 transition-transform duration-500"
-            data-aos="fade-up"
-            data-aos-delay={`${index * 200}`} // Staggered delay for each team member
-          >
-            <div className="overflow-hidden rounded-full w-40 h-40 mx-auto mb-6">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-            </div>
-            <h3 className="text-2xl font-semibold text-gray-800">
-              {member.name}
-            </h3>
-            <p className="text-purple-600">{member.role}</p>
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-purple-600 opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
-          </div>
-        ))}
+      <div className="flex justify-center flex-wrap  team ">
+  {teamMembers.map((member, index) => (
+    <div
+      key={index}
+      className="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-3 transition-transform duration-500 custom-card"
+      data-aos="fade-up"
+      data-aos-delay={`${index * 200}`} // Staggered delay for each team member$  style={{ marginLeft: "0px", padding: "2.2rem" }}
+    >
+      <div className="overflow-hidden rounded-full w-40 h-40 mx-auto mb-6">
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+        />
       </div>
+      <h3 className="text-2xl font-semibold text-gray-800 name">
+        {member.name}
+      </h3>
+      <p className="text-purple-600">{member.role}</p>
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-purple-600 opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+    </div>
+  ))}
+</div>
+
     </section>
   );
 }

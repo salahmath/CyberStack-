@@ -131,3 +131,63 @@ html {
   box-shadow: 0 0 0 2px rgba(126, 34, 206, 0.354); /* focus:ring-purple-600 */
   border-color: rgba(126, 34, 206, 0.405); /* focus:border-purple-600 */
 }
+
+@media (max-width: 1024px) {
+  .lottie {
+    display: none;
+  }
+  
+}
+.team{
+  display: flex;
+  justify-content: center; /* Aligns the cards vertically at the center */
+  gap: 40px;
+  
+}
+
+.marquee {
+  width: 100vw; /* 50% de la largeur de l'écran */
+}
+
+
+
+@media (max-width: 800px) {
+  
+  .team{
+    display: flex;
+    flex-direction: row; /* Change column to row */
+    justify-content: center; /* Aligns the cards horizontally at the center */
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+    gap: 20px; /* Adds space between cards */
+  } .name{
+    font-size: 1.5rem !important;
+  }
+
+  .custom-card:last-child {
+    margin-left: 0px;
+    padding: 2.2rem;
+  }
+  
+  }
+
+
+  @media (max-width: 566px) {
+  
+    .team{
+      display: flex;
+      flex-direction: row; /* Change column to row */
+      justify-content: center; /* Aligns the cards horizontally at the center */
+      flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+      gap: 20px; /* Adds space between cards */
+    } 
+    
+    .logoT{
+      font-size: 1.5rem;
+    }
+  
+    .custom-card:last-child {
+      margin-left: 0px;
+      padding: 2.2rem;
+    }
+    
+    }
