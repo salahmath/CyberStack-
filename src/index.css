@@ -201,3 +201,11 @@ html {
       rotate: 180deg !important;
       scale: 1.01;
     }
+    .togel{
+      color: gray !important;
+      transition: 0.4s;
+    }
+    .togel:hover{
+      color: red !important;
+      scale: 1.05 !important;
+    }

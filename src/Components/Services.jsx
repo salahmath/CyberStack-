@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { FaCode, FaMobileAlt, FaShieldAlt } from "react-icons/fa"; // Import icons
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Marquee from "react-fast-marquee";
+
 function Services() {
   useEffect(() => {
     AOS.init({
@@ -60,6 +62,7 @@ function Services() {
           ))}
         </div>
       </div>
+     
     </section>
   );
 }

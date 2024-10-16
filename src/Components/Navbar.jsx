@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
-            className="text-gray-700 hover:text-yellow-600 focus:outline-none"
+            className="text-gray-700 hover:text-yellow-600 focus:outline-none togel"
           >
             <svg
               className="w-6 h-6"
