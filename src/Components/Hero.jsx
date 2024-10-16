@@ -34,18 +34,19 @@ const Hero = () => {
               View on LinkedIn
             </a>
             <a
-              href="#"
+              href="https://maps.app.goo.gl/1PApTF4ytMAooH2VA"
               className="bg-purple-600 text-white px-4 py-2 rounded-lg flex items-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
                 viewBox="0 0 24 24"
-                className="h-5 w-5 text-white mr-2"
+                width="24"
+                height="24"
+                fill="white"
               >
-                <path d="M12 0L3.175 5.847v12.308L12 24l8.825-5.845V5.847L12 0zm2.896 17.367H9.098v-1.927h5.792v1.927zm.83-3.488H8.268v-1.927h7.458v1.927zm.795-3.57H7.473V8.385h9.048v1.924z" />
-              </svg>
-              View on Upwork
+                <path d="M12 2C8.14 2 5 5.14 5 9c0 4.28 3.4 7.72 6.01 12.05.35.56 1.13.56 1.48 0C15.6 16.72 19 13.28 19 9c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+              </svg>{" "}
+              View on Maps
             </a>
           </div>
         </div>

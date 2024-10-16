@@ -60,6 +60,33 @@ function Partners() {
         "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png", // Kali Linux (Cybersécurité)
       key: "Next.js",
     },
+    {
+      image: "https://nmap.org/images/nmap-logo-256x256.png", // Kali Linux (Cybersécurité)
+      key: "Nmap",
+    },
+    {
+      image: "https://miro.medium.com/v2/resize:fit:710/0*FvyoEolATs1TVCy9.png", // Kali Linux (Cybersécurité)
+      key: "BurpSuit",
+    },
+    {
+      image:
+        "https://atomrace.com/blog/wp-content/uploads/2017/10/metasploit-logo-300x300.png", // Kali Linux (Cybersécurité)
+      key: "Metasploit",
+    },
+    {
+      image: "https://www.kali.org/tools/nikto/images/nikto-logo.svg", // Kali Linux (Cybersécurité)
+      key: "nikto",
+    },
+    {
+      image:
+        "https://e1.pngegg.com/pngimages/342/752/png-clipart-macos-app-icons-wireshark.png", // Kali Linux (Cybersécurité)
+      key: "wireshark",
+    },
+    {
+      image:
+        "https://miro.medium.com/v2/resize:fit:954/1*ssgbiwYHOi9gIXt9pGCJYw.png", // Kali Linux (Cybersécurité)
+      key: "wireshark",
+    },
   ];
 
   return (
