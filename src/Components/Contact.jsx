@@ -59,17 +59,19 @@ function Contact() {
 
   return (
     <section id="contact" className="bg-gray-50 py-16 px-6 lg:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div  className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Left Side: Contact Info */}
         <div className="space-y-8">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 data-aos="fade-up" className="text-4xl font-bold text-gray-800 mb-4">
             Get in Touch
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600"             data-aos="fade-up"
+            data-aos-delay="100">
             We would love to hear from you! Whether you have a question, want to
             work together, or just say hello.
           </p>
-          <div className="space-y-4">
+          <div             data-aos="fade-up"
+            data-aos-delay="200" className="space-y-4">
             <div>
               <h3 className="text-xl font-semibold text-gray-800">Email</h3>
               <a
@@ -110,11 +112,13 @@ function Contact() {
         </div>
 
         {/* Right Side: Contact Form */}
-        <div className="bg-white p-8 shadow-lg rounded-lg">
+        <div             data-aos="fade-up"
+            data-aos-delay="200" className="bg-white p-8 shadow-lg rounded-lg">
           <h3 className="text-2xl font-semibold text-gray-800 mb-6">
             Send a Message
           </h3>
-          <form onSubmit={handleSubmit} className="space-y-6">
+
+          <form  onSubmit={handleSubmit} className="space-y-6">
           <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">Your Name</label>
               <input

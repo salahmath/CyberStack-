@@ -65,18 +65,24 @@ function Partners() {
   return (
     <section className="bg-gray-50 py-16 px-6 lg:px-20">
       <div>
-        <div className="max-w-7xl mx-auto text-center">
-          <h2  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-8">
-            Our Trusted Partners
+        <div data-aos="fade-up" className="max-w-7xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-8">
+            Languages We Use
           </h2>
           <p className="text-gray-600" data-aos="fade-up" data-aos-delay="100">
-            Learn more about who we are and what drives us.
+            Discover the programming languages and technologies that power our
+            projects.
           </p>
-          <div className=" mx-auto mt-36 flex justify-center mt-10 mb-10">
-            <div data-aos="fade-up" className="marquee" style={{ padding: "40px 0" }}>
+
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className=" mx-auto mt-36 flex justify-center mt-10 mb-10"
+          >
+            <div className="marquee" style={{ padding: "40px 0" }}>
               {" "}
               {/* Augmentez le padding pour un plus grand espace vertical */}
-              <Marquee >
+              <Marquee>
                 {images.map((image) => {
                   return (
                     <div className="langagues mx-8">

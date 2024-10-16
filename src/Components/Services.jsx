@@ -38,16 +38,17 @@ function Services() {
     <section id="services" className="bg-gray-50 py-16 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2  data-aos="fade-up" className="text-4xl font-bold text-gray-800 mb-4">
             Our Services
           </h2>
-          <p className="text-gray-600">
+          <p data-aos="fade-up" data-aos-delay="100" className="text-gray-600">
             Explore the wide range of IT services we offer to help your business
             thrive in the digital world.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+        <div  data-aos="fade-up"
+            data-aos-delay="200" className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {services.map((service, index) => (
             <div
               key={index}

@@ -40,7 +40,8 @@ function Team() {
         </p>
       </div>
 
-      <div className="flex justify-center flex-wrap  team ">
+      <div data-aos="fade-up"
+            data-aos-delay="200" className="flex justify-center flex-wrap  team ">
         {teamMembers.map((member, index) => (
           <div
             key={index}
