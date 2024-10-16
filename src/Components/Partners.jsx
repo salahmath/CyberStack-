@@ -79,7 +79,7 @@ function Partners() {
     },
     {
       image:
-        "https://e1.pngegg.com/pngimages/342/752/png-clipart-macos-app-icons-wireshark.png", // Kali Linux (Cybersécurité)
+        "https://upload.wikimedia.org/wikipedia/commons/d/db/Wireshark_Icon.png", // Kali Linux (Cybersécurité)
       key: "wireshark",
     },
     {
