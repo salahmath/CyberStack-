@@ -3,7 +3,7 @@ import React from "react";
 import groovyWalkAnimation from "../../public/lootie/blackPc.json";
 const Hero = () => {
   return (
-    <section id="home" className="bg-white py-36 mb-48">
+    <section id="home" className="bg-white py-36 mb-15">
       <div className="container mx-auto px-5 flex flex-col-reverse lg:flex-row items-center">
         <div className="w-full lg:w-1/2 flex flex-col space-y-4 lg:ml-36 px-6 lg:px-0">
           <h1 className="text-3xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
